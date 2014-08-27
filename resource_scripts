@@ -1,0 +1,22 @@
+#include<iostream>
+
+
+/*  This is the initial processes script in which is resourced through super globals. This file contains; functions, 
+struct & classes
+*/
+
+
+  using namespace std;
+  
+  
+
+int main()
+{
+
+
+
+
+
+system("PAUSE");
+return 0;
+}

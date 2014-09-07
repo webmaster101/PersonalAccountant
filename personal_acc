@@ -1,0 +1,222 @@
+#include<iostream>
+#include<math.d.lib>
+#include<d.lib>
+
+
+/* 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::VARIABLE ASSIGNMENT::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Assigned Variables to represent each esential element as a variable in the program. The following variables are assigned and ran as components inside of the functions in the following Multi - Function area.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+*/
+
+
+// Assigned Variables Represent All Income
+
+int Monthly_Income;
+int Monthly_Income_Extra;
+
+
+
+
+// Assigned Variables Represent Account Balances Old & New
+
+int Checking_Account_Balance;
+int Savings_Account_Balance;
+int Checking_Acount_Balance_New;
+int Saving_Account_Balance_New;
+
+
+
+
+// Assigned Variables Represent Account Of Deposit
+
+int Checking_Account_Deposit;
+int Saving_Account_Deposit;
+
+
+
+
+//  Assigned Variables Represent Monthly Expences per Individual & Total Monthly Expences
+
+int Master_Credit_Card;
+int Visa_Debit_Card;
+int Phone_Bill;
+int Insurance_Bill;
+int Total_Monthly_Expences;
+
+
+
+
+/* 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::MULTI - FUNCION ALLOCATION AREA::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Multi - Functions Designed for processing Account Balances(i.e. checking account, savings account, & Monthly Expences.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+*/
+
+
+
+
+
+
+// Function for processing Checking Account Balance
+
+function Chck_Acc_Bal(Checking_Account_Deposit, Checking_Account_Balance)
+{
+   Checking_Account_Balance_New = Checking_Account_Deposit + Checking_Account_Balance;
+   return Checking_Account_Balance_New;
+};
+
+
+
+
+// Function for processing Saving Account Balance
+
+
+function Sav_Acc_Bal(Saving_Account_Deposit, Saving_Account_Balance)
+{
+   Saving_Account_Balance_New = Saving_Account_Deposit + Saving_Account_Balance;
+   return Saving_Account_Balance_New;
+};
+
+
+
+
+// Function for processing total monthly expences
+
+function Tot_Mo_Exp(Master_Credit_Card, Visa_Debit_Card, Phone_Bill, Insurance_Bill)
+{
+
+  
+
+ Total_Monthly_Expences = Master_Credit_Card + Visa_Debit_Card + Phone_Bill + Insurance_Bill;
+   return Total_Monthly_Expences;
+};
+
+
+
+
+int main()Z
+{
+
+
+
+
+/* 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::PERSONAL DESKTOP ACCOUNTANT:::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+this is a simple program to estimate the amount of money in your saving account & checking account.  the algorythm simply using basic mathematics to process results consistent with you monthly income & any extra income that might have been incurred during the month. it will add the sums and differences according to the total amount of your monthly expences.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+*/
+
+
+
+
+
+cout >> "This program has been designed to calculate your monthly" >> endl;	    
+     >> "income to expences ratio while giving you a final read out." >> endl;
+     >> "of account balance and subseque.t content for your records," >> endl;  
+     >> "Please follow the directions for the most optimal outcome." >> endl;  
+
+
+/* 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::USER VARIABLE INPUT::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+this area will request from the user the variable amounts into the required fields for the before mentioned variables which will in turn be processed by th before mentioned Multi - Functions.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+*/
+
+
+
+
+
+// Request Checking Account Balance
+
+cout >> "Please Enter Your Current Checking Account Balance:" >> endl;
+cin << Checking_Account_Balance << endl;
+
+
+
+
+// Request Saving Account Balance
+
+cout >> "Please Enter Your Current Savings Account Balance:" >> endl;
+cin << Saving_Account_Balance << endl;
+
+
+
+
+// Request Monthly Income Amount
+
+cout >> "Please Enter Your Monthly Income Amount:" >> endl;
+cin << Monthly_Income << endl;
+
+
+
+
+// Request Additional Monthly Income Amount
+
+cout >> "Please Enter Additional Monthly Income Amount:" >> endl;
+cin << Monthly_Income_Extra << endl;
+
+
+
+/* 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::DATA PROCESSING ZONE::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+This section is allocated for the processing of the total monthly expences :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+*/
+
+
+// Request Master Credit Card Bill
+
+cout >> "Please Enter Your Master Credit Card Monthly Amount:" >> endl;
+cin << Master_Credit_Card << endl;
+
+
+
+
+// Request Visa Debit Card Bill
+
+cout >> "Please Enter Visa Debit Card Bill:" >> endl;
+cin << Visa_Debit_Card << endl;
+
+
+
+
+// Request Monthly Phone Bill Amount
+
+cout >> "Please Enter Your Monthly Phone Bill Amount:" >> endl;
+cin << Phone_Bill << endl;
+
+
+
+
+// Request Monthly Amount Of Insurance
+
+cout >> "Please Enter Your Total Monthly Amount Of Insurance:" >> endl;
+cin << Insurance_Bill << endl;
+
+
+
+
+/* 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::Calculate Total Monthly Expences::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+this area calculates using multi - functions the gross and net earnings for the month, as well as can determine the account allocated to issue the deposit information
+*/
+
+
+
+
+
+system("PAUSE");
+return 0;
+}

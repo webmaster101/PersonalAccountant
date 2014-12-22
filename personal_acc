@@ -4,11 +4,11 @@
 
 /* 
 VARIABLE ASSIGNMENT:
-Assigned Variables to represent each esential element as a variable in the program. The following variables are assigned and ran as components inside of the functions in the following Multi - Function area.
+assigned to represent each element as a variable in the program. The following variables are assigned and ran as members inside of the functions in the following Multi - Function area.
 */
 
 
-/* Assigned Variables Represent All Income */
+/* Assigned Variables Represent Types of Income */
 
 int Monthly_Income;
 int Monthly_Income_Extra;
@@ -148,6 +148,7 @@ cin << Insurance_Bill << endl;
 Calculate Total Monthly Expences:
 this area calculates using multi - functions the gross and net earnings for the month, as well as can determine the account allocated to issue the deposit information
 */
+
 
 
 system("PAUSE");
